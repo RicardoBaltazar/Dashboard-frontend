@@ -1,4 +1,5 @@
 import styled from './styled.module.scss';
+import Card from '../src/components/cards';
 
 function App() {
   return (
@@ -6,11 +7,13 @@ function App() {
     <div className={styled.app}>
 
       <div className={styled.card}>
-        <input type="number" name="" id="" />
+        <Card style={styled.card1}/>
       </div>
 
-      <div className={styled.card}>
-        <input type="number" name="" id="" />
+      <div className={styled.cards}>
+        <Card style={styled.card2}/>
+        <Card style={styled.card2}/>
+        <Card style={styled.card2}/>
       </div>
       
     </div>
