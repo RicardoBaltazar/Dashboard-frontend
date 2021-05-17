@@ -1,5 +1,6 @@
 import styled from './styled.module.scss';
 import Menu from './components/sidebarMenu';
+import Routes from './routes/';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         </header>
         <section className={styled.section}>
           Início
+          <Routes />
         </section>
       </main>
     </div>
