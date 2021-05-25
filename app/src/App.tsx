@@ -8,10 +8,9 @@ function App() {
       <Menu />
       <main className={styled.main}>
         <header className={styled.header}>
-          header
+          App Cadastro
         </header>
         <section className={styled.section}>
-          Início
           <Routes />
         </section>
       </main>
