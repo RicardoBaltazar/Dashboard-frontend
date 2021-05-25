@@ -14,8 +14,8 @@ export default function Routes(){
             <Router>
                     <Switch>
                         <Route exact path="/" component={pageHome} />
-                        <Route path="/b" component={pageCompanies} />
-                        <Route path="/c" component={pageRegister} />
+                        <Route path="/companies" component={pageCompanies} />
+                        <Route path="/register" component={pageRegister} />
                     </Switch>
             </Router>
         </>
