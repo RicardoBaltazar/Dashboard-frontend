@@ -1,0 +1,61 @@
+.section {
+    border: 1px solid pink;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .card {
+        width: 80%;
+        height: 50%;
+        border-radius: 4px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px #00000042;
+
+        .headerCard{
+            height: 3.5rem;
+            width: 100%;
+            background-color: #1B1D29;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            padding: 0 2rem;
+
+            button {
+                background-color: #252835;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+                transition: 0.2s;
+                border: none;
+            }
+        }
+
+        .form {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 2fr;
+            align-items: center;
+            justify-content: center;
+            
+            
+            div {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem 1rem;
+
+                label {
+                    font-size: 0.9rem;
+                    color: #1B1D29;
+                    font-weight: 700;
+                }
+
+                input {
+                    margin: 0.3rem 0.5rem 0.5rem 0;
+                    color: #1B1D29;
+                    border: none;
+                    border-bottom: 2px solid #E5E5E5;
+                    padding: 0.4rem ;
+                }
+            }
+        }
+    }
+}
