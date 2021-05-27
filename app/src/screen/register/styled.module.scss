@@ -1,5 +1,4 @@
-.section {
-    border: 1px solid pink;
+.form {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -22,15 +21,19 @@
 
             button {
                 background-color: #252835;
-                color: #fff;
+                color: #ffffff;
                 padding: 0.5rem 1rem;
                 cursor: pointer;
                 transition: 0.2s;
                 border: none;
+
+                &:hover {
+                    color: #e5e5e5;
+                }
             }
         }
 
-        .form {
+        .section {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 2fr;
             align-items: center;
