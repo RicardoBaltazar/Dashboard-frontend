@@ -5,7 +5,7 @@ import {
     Link
 } from "react-router-dom";
 import pageHome from '../screen/home';
-import pageCompanies from '../screen/companies';
+import PageCompanies from '../screen/companies';
 import pageRegister from '../screen/register';
 
 export default function Routes(){
@@ -14,7 +14,7 @@ export default function Routes(){
             <Router>
                     <Switch>
                         <Route exact path="/" component={pageHome} />
-                        <Route path="/companies" component={pageCompanies} />
+                        <Route path="/companies" component={PageCompanies} />
                         <Route path="/register" component={pageRegister} />
                     </Switch>
             </Router>
