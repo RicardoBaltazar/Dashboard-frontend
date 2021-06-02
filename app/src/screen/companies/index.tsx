@@ -10,7 +10,6 @@ const PageCompanies = () => {
         .then(response => {
             setRegisteredCompanies(response.data);
             console.log(registeredCompanies);
-            console.log(registeredCompanies);
         });
     }, []);
 

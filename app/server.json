@@ -1,52 +1,20 @@
 {
-    "companies": [
-      {
-          "Name": "Nome",
-          "image": "imagem",
-          "cnpj": "cnpj",
-          "uf": "cidade",
-          "cep": "cep",
-          "open-date": "data de abertura"
-      },
-      {
-          "Name": "Nome",
-          "image": "imagem",
-          "cnpj": "cnpj",
-          "uf": "cidade",
-          "cep": "cep",
-          "open-date": "data de abertura"
-      },
-      {
-          "Name": "Nome",
-          "image": "imagem",
-          "cnpj": "cnpj",
-          "uf": "cidade",
-          "cep": "cep",
-          "open-date": "data de abertura"
-      },
-      {
-          "Name": "Nome",
-          "image": "imagem",
-          "cnpj": "cnpj",
-          "uf": "cidade",
-          "cep": "cep",
-          "open-date": "data de abertura"
-      },
-      {
-          "Name": "Nome",
-          "image": "imagem",
-          "cnpj": "cnpj",
-          "uf": "cidade",
-          "cep": "cep",
-          "open-date": "data de abertura"
-      },
-      {
-          "Name": "Nome",
-          "image": "imagem",
-          "cnpj": "cnpj",
-          "uf": "cidade",
-          "cep": "cep",
-          "open-date": "data de abertura"
-      }
-    ]
+  "companies": [
+    {
+      "name": "as",
+      "cnpj": "as",
+      "uf": "as",
+      "cep": "as",
+      "opendate": "as",
+      "id": 1
+    },
+    {
+      "name": "as",
+      "cnpj": "as",
+      "uf": "as",
+      "cep": "as",
+      "opendate": "as",
+      "id": 2
+    }
+  ]
 }

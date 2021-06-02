@@ -1,25 +1,60 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import styled from './styled.module.scss';
+const url = 'http://localhost:8000/companies';
 
+type Datas = {
+    name: string;
+    cnpj: string;
+    city: string;
+    cep: string;
+    opendate: string;
+}
 
+type DatasProps = {
+    datas: Datas;
+}
 
-const PageRegister = () => {
+function PageRegister({ datas }: DatasProps){
 
-    const [ name, setName ] = useState('');
-    const [ cnpj, setCnpj ] = useState('');
-    const [ city, setCity ] = useState('');
-    const [ cep, setCep ] = useState('');
-    const [ openDate, setOpenDate ] = useState('');
+    const [name, setName] = useState('');
+    const [cnpj, setCnpj] = useState('');
+    const [city, setCity] = useState('');
+    const [cep, setCep] = useState('');
+    const [openDate, setOpenDate] = useState('');
+
+    // let data = JSON.stringify({
+    //     id: "1",
+    //     Name: 'name',
+    //     Cnpj: 'aa',
+    //     Uf: 'aa',
+    //     Cep: 'aa',
+    //     Opendate: 'aa',
+    // });
 
     const handleSubmit = (event: { preventDefault: () => void; }) => {
         event.preventDefault();
-        console.log(
-            name,
-            cnpj,
-            city,
-            cep,
-            openDate,
-        )
+        console.log('enviando...');
+        // console.log(data);
+
+        const headers = {
+            'Content-Type': 'application/json'
+        }
+
+        axios.post('http://localhost:8000/companies', {
+            name: name,
+            cnpj: cnpj,
+            uf: city,
+            cep: cep,
+            opendate: openDate,
+        }, {headers: headers})
+        .then(function (response) {
+            console.log(response);
+            console.log(response.data)
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
     }
 
     return (
@@ -33,23 +68,23 @@ const PageRegister = () => {
                     <div className={styled.section}>
                         <div>
                             <label htmlFor="">Nome Da Empresa</label>
-                            <input type="text" onChange={e => setName(e.target.value)}/>
+                            <input type="text" onChange={e => setName(e.target.value)} />
                         </div>
                         <div>
                             <label htmlFor="">Cnpj</label>
-                            <input type="text" onChange={e => setCnpj(e.target.value)}/>
+                            <input type="text" onChange={e => setCnpj(e.target.value)} />
                         </div>
                         <div>
                             <label htmlFor="">Cidade/UF</label>
-                            <input type="text" onChange={e => setCity(e.target.value)}/>
+                            <input type="text" onChange={e => setCity(e.target.value)} />
                         </div>
                         <div>
                             <label htmlFor="">CEP</label>
-                            <input type="text" onChange={e => setCep(e.target.value)}/>
+                            <input type="text" onChange={e => setCep(e.target.value)} />
                         </div>
                         <div>
                             <label htmlFor="">Data de Abertura</label>
-                            <input type="text" onChange={e => setOpenDate(e.target.value)}/>
+                            <input type="text" onChange={e => setOpenDate(e.target.value)} />
                         </div>
                     </div>
                 </div>
