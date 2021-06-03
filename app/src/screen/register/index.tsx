@@ -1,61 +1,47 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import styled from './styled.module.scss';
+import { VscLoading } from "react-icons/vsc";
 const url = 'http://localhost:8000/companies';
 
-type Datas = {
-    name: string;
-    cnpj: string;
-    city: string;
-    cep: string;
-    opendate: string;
-}
-
-type DatasProps = {
-    datas: Datas;
-}
-
-function PageRegister({ datas }: DatasProps){
+function PageRegister(){
 
     const [name, setName] = useState('');
     const [cnpj, setCnpj] = useState('');
     const [city, setCity] = useState('');
     const [cep, setCep] = useState('');
     const [openDate, setOpenDate] = useState('');
+    const [ loading, setLoading ] = useState(false);
+    const headers = {
+        'Content-Type': 'application/json'
+    }
 
-    // let data = JSON.stringify({
-    //     id: "1",
-    //     Name: 'name',
-    //     Cnpj: 'aa',
-    //     Uf: 'aa',
-    //     Cep: 'aa',
-    //     Opendate: 'aa',
-    // });
+    const handleLoading = () => {
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false);
+        }, 2000);
+    };
 
     const handleSubmit = (event: { preventDefault: () => void; }) => {
         event.preventDefault();
         console.log('enviando...');
         // console.log(data);
-
-        const headers = {
-            'Content-Type': 'application/json'
-        }
-
-        axios.post('http://localhost:8000/companies', {
-            name: name,
-            cnpj: cnpj,
-            uf: city,
-            cep: cep,
-            opendate: openDate,
-        }, {headers: headers})
-        .then(function (response) {
-            console.log(response);
-            console.log(response.data)
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
-    }
+        // axios.post('url', {
+        //     name: name,
+        //     cnpj: cnpj,
+        //     uf: city,
+        //     cep: cep,
+        //     opendate: openDate,
+        // }, {headers: headers})
+        // .then(function (response) {
+        //     console.log(response);
+        //     console.log(response.data)
+        // })
+        // .catch(function (error) {
+        //     console.log(error);
+        // });
+    };
 
     return (
         <>
@@ -63,7 +49,10 @@ function PageRegister({ datas }: DatasProps){
                 <div className={styled.card}>
                     <div className={styled.headerCard}>
                         <p>Empresas/CADASTRAR EMPRESAS</p>
-                        <button type='submit'>SALVAR</button>
+                        <button type='submit' onClick={handleLoading}>
+                            {loading && <span><VscLoading /></span>}
+                            {!loading && 'SALVAR'}
+                        </button>
                     </div>
                     <div className={styled.section}>
                         <div>
