@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import styled from './styled.module.scss';
 import { VscLoading } from "react-icons/vsc";
+import { useNotification } from '../../context/notification';
 const url = 'http://localhost:8000/companies';
 
-function PageRegister(){
+interface Props {
+    notification: boolean
+}
+
+function PageRegister(props : Props){
 
     const [name, setName] = useState('');
     const [cnpj, setCnpj] = useState('');
@@ -12,6 +17,8 @@ function PageRegister(){
     const [cep, setCep] = useState('');
     const [openDate, setOpenDate] = useState('');
     const [ loading, setLoading ] = useState(false);
+    const { notification, setNotification }  = useNotification();
+    
     const headers = {
         'Content-Type': 'application/json'
     }
@@ -41,6 +48,11 @@ function PageRegister(){
         // .catch(function (error) {
         //     console.log(error);
         // });
+
+        setNotification(true);
+        setTimeout(() => {
+            setNotification(false);
+        }, 8000);
     };
 
     return (

@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 const url = 'http://localhost:8000/companies';
 
 const PageCompanies = () => {
-
     const [ registeredCompanies, setRegisteredCompanies ] = useState([]);
 
     useEffect(() => {

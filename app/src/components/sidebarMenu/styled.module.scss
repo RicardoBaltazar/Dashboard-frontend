@@ -18,4 +18,19 @@
             cursor: pointer;
         }
     }
+
+    .notification{
+        height: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+
+        &:hover {
+            background-color: #252835;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+    }
 }
