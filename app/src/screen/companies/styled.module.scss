@@ -1,0 +1,12 @@
+.pageCompanies {
+    display: flex;
+    justify-content: center;
+    .card {
+            height: 100%;
+            width: 80%;
+            border-radius: 4px;
+            background: #FFFFFF;
+            box-shadow: 0px 1px 3px #00000042;
+            padding-bottom: 2rem;
+        }
+}

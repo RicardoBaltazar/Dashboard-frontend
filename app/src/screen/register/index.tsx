@@ -33,21 +33,20 @@ function PageRegister(props : Props){
     const handleSubmit = (event: { preventDefault: () => void; }) => {
         event.preventDefault();
         console.log('enviando...');
-        // console.log(data);
-        // axios.post('url', {
-        //     name: name,
-        //     cnpj: cnpj,
-        //     uf: city,
-        //     cep: cep,
-        //     opendate: openDate,
-        // }, {headers: headers})
-        // .then(function (response) {
-        //     console.log(response);
-        //     console.log(response.data)
-        // })
-        // .catch(function (error) {
-        //     console.log(error);
-        // });
+        axios.post(url, {
+            name: name,
+            cnpj: cnpj,
+            uf: city,
+            cep: cep,
+            opendate: openDate,
+        }, {headers: headers})
+        .then(function (response) {
+            console.log(response);
+            console.log(response.data)
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
 
         setNotification(true);
         setTimeout(() => {
