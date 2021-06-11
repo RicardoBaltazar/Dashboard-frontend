@@ -47,11 +47,16 @@ const PageCompanies = (props : Props) => {
         <>
             <div className={styled.pageCompanies}>
                 <div className={styled.card}>
+                    <div className={styled.headerCard}>
+                        <p>EMPRESAS</p>
+                    </div>
                     <tr className={styled.th}>
-                        <th>Identificação</th>
+                        <th>Nome</th>
+                        <th>CNPJ</th>
                         <th>Cidade/UF</th>
                         <th>CEP</th>
                         <th>Data de Abertura</th>
+                        <th></th>
                     </tr>
                     {tableCompanies}
                 </div>

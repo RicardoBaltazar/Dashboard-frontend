@@ -1,5 +1,19 @@
 .tr {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 3rem;
+
+    .DeleteBtn {
+        background-color: #252835;
+        color: #ffffff;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        transition: 0.2s;
+        border: none;
+        width: 6rem;
+
+        &:hover {
+            color: #b6b4b4;
+        }
+    }
 }

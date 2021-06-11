@@ -17,7 +17,7 @@ export default function Table(props: Props) {
                 <td>{props.uf}</td>
                 <td>{props.cep}</td>
                 <td>{props.opendate}</td>
-                <button>Deletar</button>
+                <button className={styled.DeleteBtn}>Deletar</button>
             </tr>
             <hr />
         </>
