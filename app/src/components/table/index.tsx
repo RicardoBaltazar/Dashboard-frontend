@@ -1,13 +1,24 @@
 import styled from './styled.module.scss';
 
-export default function Table() {
+interface Props {
+    name: string;
+    cnpj: String
+    uf: String
+    cep: String
+    opendate: String
+}
+
+export default function Table(props: Props) {
     return (
         <>
-            <p>nome</p>
-            <p>cnpt</p>
-            <p>cidade</p>
-            <p>cep</p>
-            <p>data</p>
+            <tr className={styled.tr}>
+                <td>{props.name}</td>
+                <td>{props.cnpj}</td>
+                <td>{props.uf}</td>
+                <td>{props.cep}</td>
+                <td>{props.opendate}</td>
+                <button>Deletar</button>
+            </tr>
             <hr />
         </>
     )
