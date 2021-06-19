@@ -7,26 +7,51 @@
         border-radius: 4px;
         background: #FFFFFF;
         box-shadow: 0px 1px 3px #00000042;
-        padding-bottom: 2rem;
 
         .headerCard {
             height: 3rem;
             width: 100%;
             background-color: #1B1D29;
             display: flex;
-            justify-content: space-between;
             align-items: center;
             color: #fff;
-            padding: 1rem;
+            padding: 0 2rem;
         }
         .th {
             height: 3rem;
             width: 100%;
             display: flex;
-            justify-content: space-around;
+            // justify-content: space-between;
             align-items: center;
             color: #000;
-            padding: 1rem;
+            padding: 1rem 3rem;
+
+            .divth {
+                // border: 1px solid red;
+                th {
+                    // border: 1px solid red;
+                    padding-right: 4.5rem;
+                }
+            }
+        }
+
+
+        th {
+            margin-right: 6rem;
+        }
+
+        .DeleteBtn{
+            background-color: #252835;
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+            border: none;
+            width: 6rem;
+    
+            &:hover {
+                color: #b6b4b4;
+            }
         }
     }
 }
