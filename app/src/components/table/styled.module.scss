@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
+    align-items: center;
 
     div {
         display: flex;
@@ -14,9 +15,9 @@
             font-weight: bold;
         }
 
-        
         td {
-            width: 100%;
+            width: 7rem;
+            height: 100%;
             text-align: left;
             font-size: 0.9rem;
         }

@@ -17,11 +17,6 @@
             color: #fff;
             padding: 0 2rem;
         }
-
-        th {
-            width: 100%;
-        }
-
         .DeleteBtn{
             background-color: #252835;
             color: #ffffff;
@@ -30,6 +25,7 @@
             transition: 0.2s;
             border: none;
             width: 6rem;
+            height: 2rem;
             margin-left: 0.5rem;
     
             &:hover {
