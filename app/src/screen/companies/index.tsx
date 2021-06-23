@@ -61,6 +61,14 @@ const PageCompanies: React.FC<Props> = (props) => {
                         cep={registeredCompanies.cep}
                         opendate={registeredCompanies.opendate}
                     >
+                        
+                        <button
+                            type="submit"
+                            className={styled.DeleteBtn}
+                            // onClick={() => setId(registeredCompanies.id)}
+                        >
+                            Editar
+                        </button>
                         <button
                             type="submit"
                             className={styled.DeleteBtn}
@@ -81,15 +89,7 @@ const PageCompanies: React.FC<Props> = (props) => {
                     <div className={styled.headerCard}>
                         <p>EMPRESAS</p>
                     </div>
-                    <tr className={styled.th}>
-                        
-                            <th>Nome</th>
-                            <th>CNPJ</th>
-                            <th>Cidade/UF</th>
-                            <th>CEP</th>
-                            <th>Data de Abertura</th>
-                        
-                    </tr>
+
                     {tableCompanies}
                 </div>
             </div>

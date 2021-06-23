@@ -17,25 +17,6 @@
             color: #fff;
             padding: 0 2rem;
         }
-        .th {
-            height: 3rem;
-            width: 92%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #000;
-            padding: 1rem 3rem;
-            text-align: left;
-
-            // .divth {
-            //     // border: 1px solid red;
-            //     th {
-            //         // border: 1px solid red;
-            //         padding-right: 4.5rem;
-            //     }
-            // }
-        }
-
 
         th {
             width: 100%;
@@ -49,6 +30,7 @@
             transition: 0.2s;
             border: none;
             width: 6rem;
+            margin-left: 0.5rem;
     
             &:hover {
                 color: #b6b4b4;
