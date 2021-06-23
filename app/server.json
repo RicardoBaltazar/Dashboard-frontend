@@ -23,14 +23,6 @@
       "cep": "985425500",
       "opendate": "12/50/2015",
       "id": 10
-    },
-    {
-      "name": "teste",
-      "cnpj": "teste",
-      "uf": "teste",
-      "cep": "teste",
-      "opendate": "teste",
-      "id": 11
     }
   ]
 }

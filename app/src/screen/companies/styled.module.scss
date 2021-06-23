@@ -19,25 +19,26 @@
         }
         .th {
             height: 3rem;
-            width: 100%;
+            width: 92%;
             display: flex;
-            // justify-content: space-between;
+            justify-content: space-between;
             align-items: center;
             color: #000;
             padding: 1rem 3rem;
+            text-align: left;
 
-            .divth {
-                // border: 1px solid red;
-                th {
-                    // border: 1px solid red;
-                    padding-right: 4.5rem;
-                }
-            }
+            // .divth {
+            //     // border: 1px solid red;
+            //     th {
+            //         // border: 1px solid red;
+            //         padding-right: 4.5rem;
+            //     }
+            // }
         }
 
 
         th {
-            margin-right: 6rem;
+            width: 100%;
         }
 
         .DeleteBtn{

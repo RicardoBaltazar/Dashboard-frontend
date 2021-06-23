@@ -1,7 +1,7 @@
 import styled from './styled.module.scss';
 
 interface Props {
-    id: String
+    // id: String
     name: string;
     cnpj: String
     uf: String
@@ -16,7 +16,7 @@ const Table: React.FC<Props> = (props) => {
     return (
         <>
             <tr className={styled.tr}>
-                {props.id}
+                {/* {props.id} */}
                 <td>{props.name}</td>
                 <td>{props.cnpj}</td>
                 <td>{props.uf}</td>

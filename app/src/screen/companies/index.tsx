@@ -53,7 +53,7 @@ const PageCompanies: React.FC<Props> = (props) => {
 
                     <Table
                         key={index}
-                        id={registeredCompanies.id}
+                        // id={registeredCompanies.id}
                         name={registeredCompanies.name}
                         cnpj={registeredCompanies.cnpj}
                         uf={registeredCompanies.uf}
@@ -81,15 +81,13 @@ const PageCompanies: React.FC<Props> = (props) => {
                         <p>EMPRESAS</p>
                     </div>
                     <tr className={styled.th}>
-                        <th>Id</th>
-                        <div className={styled.divth}>
+                        
                             <th>Nome</th>
                             <th>CNPJ</th>
                             <th>Cidade/UF</th>
                             <th>CEP</th>
                             <th>Data de Abertura</th>
-                        </div>
-                        {/* <th></th> */}
+                        
                     </tr>
                     {tableCompanies}
                 </div>
