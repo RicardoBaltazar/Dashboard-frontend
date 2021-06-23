@@ -10,7 +10,7 @@ interface Props {
     children: any
 }
 
-export default function Table(props: Props) {
+const Table: React.FC<Props> = (props) => {
     
 
     return (
@@ -28,3 +28,5 @@ export default function Table(props: Props) {
         </>
     )
 }
+
+export default Table;

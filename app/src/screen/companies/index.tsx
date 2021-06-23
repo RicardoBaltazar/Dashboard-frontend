@@ -12,12 +12,11 @@ interface Props {
     uf: String
     cep: String
     opendate: String
-    children: any
 }
 
-const PageCompanies = (props: Props) => {
+const PageCompanies: React.FC<Props> = (props) => {
     const [registeredCompanies, setRegisteredCompanies] = useState([props]);
-    const [id, setId] = useState([] as any);
+    const [id, setId] = useState<String>();
 
     useEffect(() => {
         axios.get(url)

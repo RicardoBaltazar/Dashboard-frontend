@@ -2,7 +2,7 @@ import styled from './styled.module.scss';
 import Menu from './components/sidebarMenu';
 import Routes from './routes/';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className={styled.App}>
       <Menu />

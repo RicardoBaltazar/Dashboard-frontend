@@ -5,18 +5,16 @@ import { VscLoading } from "react-icons/vsc";
 import { useNotification } from '../../context/notification';
 const url = 'http://localhost:8000/companies';
 
-interface Props {
-    notification: boolean
-}
 
-function PageRegister(props : Props){
 
-    const [name, setName] = useState('');
-    const [cnpj, setCnpj] = useState('');
-    const [city, setCity] = useState('');
-    const [cep, setCep] = useState('');
-    const [openDate, setOpenDate] = useState('');
-    const [ loading, setLoading ] = useState(false);
+const PageRegister: React.FC = () => {
+
+    const [name, setName] = useState<String>('');
+    const [cnpj, setCnpj] = useState<String>('');
+    const [city, setCity] = useState<String>('');
+    const [cep, setCep] = useState<String>('');
+    const [openDate, setOpenDate] = useState<String>('');
+    const [ loading, setLoading ] = useState<Boolean>(false);
     const { notification, setNotification }  = useNotification();
     
     const headers = {

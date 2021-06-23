@@ -10,7 +10,7 @@ interface Props {
 
 
 
-function Cards(props: Props){
+const Cards: React.FC<Props> = (props) => {
     return (
         <>
             <Link to={props.link} className={styled.cardsHome}>
