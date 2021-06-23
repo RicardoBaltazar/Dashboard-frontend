@@ -3,6 +3,7 @@ import axios from 'axios';
 import { table } from 'console';
 import styled from './styled.module.scss';
 import Table from '../../components/table';
+import AddButton from '../../components/addButton';
 const url = 'http://localhost:8000/companies/?_page=1&_limit=5';
 
 interface Props {
@@ -92,6 +93,7 @@ const PageCompanies: React.FC<Props> = (props) => {
                     {tableCompanies}
                 </div>
             </div>
+            <AddButton />
         </>
     )
 }
