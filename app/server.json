@@ -17,20 +17,12 @@
       "id": 9
     },
     {
-      "name": "Empresa",
-      "cnpj": "32152152",
-      "uf": "Porto Alegre",
-      "cep": "985425500",
-      "opendate": "12/50/2015",
+      "name": "Teste",
+      "cnpj": "2235124",
+      "uf": "Viamão",
+      "cep": "523561254",
+      "opendate": "23562421",
       "id": 10
-    },
-    {
-      "name": "teste teste teste teste teste",
-      "cnpj": "321321",
-      "uf": "321321",
-      "cep": "321321321",
-      "opendate": "321321321",
-      "id": 11
     }
   ]
 }

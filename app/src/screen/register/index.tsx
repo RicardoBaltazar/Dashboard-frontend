@@ -58,10 +58,6 @@ const PageRegister: React.FC = () => {
                 <div className={styled.card}>
                     <div className={styled.headerCard}>
                         <p>Empresas/CADASTRAR EMPRESAS</p>
-                        <button type='submit' onClick={handleLoading}>
-                            {loading && <span><VscLoading /></span>}
-                            {!loading && 'SALVAR'}
-                        </button>
                     </div>
                     <div className={styled.section}>
                         <div>
@@ -85,6 +81,10 @@ const PageRegister: React.FC = () => {
                             <input type="text" onChange={e => setOpenDate(e.target.value)} />
                         </div>
                     </div>
+                <button type='submit' onClick={handleLoading}>
+                            {loading && <span><VscLoading /></span>}
+                            {!loading && 'SALVAR'}
+                        </button>
                 </div>
             </form>
         </>
