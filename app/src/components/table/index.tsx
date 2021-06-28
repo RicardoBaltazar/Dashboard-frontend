@@ -34,7 +34,7 @@ const Table: React.FC<Props> = (props) => {
 
                 <td>{props.uf}</td>
                 </div>
-
+{/* 
                 <div>
 
                 <span>Cep</span>
@@ -45,7 +45,7 @@ const Table: React.FC<Props> = (props) => {
                     
                 <span>Data de Abertura</span>
                 <td>{props.opendate}</td>
-                </div>
+                </div> */}
 
                 {props.children}
             </tr>
