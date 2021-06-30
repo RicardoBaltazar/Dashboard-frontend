@@ -11,7 +11,7 @@ interface Props {
 }
 
 const Table: React.FC<Props> = (props) => {
-    
+
 
     return (
         <>
@@ -19,22 +19,21 @@ const Table: React.FC<Props> = (props) => {
                 {/* {props.id} */}
 
                 <div>
-                <span>Nome</span>
-                <td>{props.name}</td>
+                    <span>Nome</span>
+                    <td>{props.name}</td>
                 </div>
 
                 <div>
-                <span>Cnpj</span>
-                <td>{props.cnpj}</td>
-
+                    <span>Cnpj</span>
+                    <td>{props.cnpj}</td>
                 </div>
 
                 <div>
-                <span>Cidade</span>
+                    <span>Cidade</span>
 
-                <td>{props.uf}</td>
+                    <td>{props.uf}</td>
                 </div>
-{/* 
+                {/* 
                 <div>
 
                 <span>Cep</span>

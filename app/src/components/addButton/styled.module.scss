@@ -8,6 +8,10 @@
     align-items: center;
     background-color: #EE6C00;
 
+    @media(max-width:900px){
+        display: none;
+    }
+
     position:absolute; 
     top:85%;
     left:92%;

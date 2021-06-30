@@ -5,8 +5,6 @@ import { VscLoading } from "react-icons/vsc";
 import { useNotification } from '../../context/notification';
 const url = 'http://localhost:8000/companies';
 
-
-
 const PageRegister: React.FC = () => {
 
     const [name, setName] = useState<String>('');
@@ -66,7 +64,7 @@ const PageRegister: React.FC = () => {
                         </div>
                         <div>
                             <label htmlFor="">Cnpj</label>
-                            <input type="text" onChange={e => setCnpj(e.target.value)} />
+                            <input type="text" maxLength={14} onChange={e => setCnpj(e.target.value)} />
                         </div>
                         <div>
                             <label htmlFor="">Cidade/UF</label>

@@ -4,7 +4,7 @@ import { table } from 'console';
 import styled from './styled.module.scss';
 import Table from '../../components/table';
 import AddButton from '../../components/addButton';
-const url = 'http://localhost:8000/companies/?_page=1&_limit=5';
+const url = 'http://localhost:8000/companies/?_page=2&_limit=5';
 
 interface Props {
     id: String
@@ -62,13 +62,13 @@ const PageCompanies: React.FC<Props> = (props) => {
                         opendate={registeredCompanies.opendate}
                     >
                         
-                        <button
+                        {/* <button
                             type="submit"
                             className={styled.DeleteBtn}
                             // onClick={() => setId(registeredCompanies.id)}
                         >
                             Editar
-                        </button>
+                        </button> */}
                         <button
                             type="submit"
                             className={styled.DeleteBtn}

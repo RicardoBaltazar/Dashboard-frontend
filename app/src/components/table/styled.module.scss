@@ -4,15 +4,28 @@
     padding: 1rem 2rem;
     align-items: center;
 
+    @media(max-width: 426px){
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    
     div {
         display: flex;
         flex-direction: column;
         align-items: left;
 
+        @media(max-width: 426px){
+            margin-bottom: 1rem;
+        }
+
         span{
             font-size: 0.7rem;
             margin-bottom: 0.25rem;
             font-weight: bold;
+
+            @media(max-width: 426px){
+                text-align: center;
+            }
         }
 
         td {
@@ -20,8 +33,10 @@
             height: 100%;
             text-align: left;
             font-size: 0.9rem;
-            border: 1px solid blue;
 
+            @media(max-width: 426px){
+                text-align: center;
+            }
         }
     }
 
