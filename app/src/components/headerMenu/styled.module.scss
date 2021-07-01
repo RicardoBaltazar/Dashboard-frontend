@@ -1,0 +1,23 @@
+.headerMenu {
+    left: 0;
+    background-color: #ffffff;
+    display: none;
+    @media(max-width:426px){
+        display: flex; 
+    }
+
+    .linkMenu {
+        height: 3.5rem;
+        width: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1B1D29;
+
+        &:hover {
+            background-color: #252835;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+    }
+}

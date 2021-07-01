@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, memo } from 'react';
 import axios from 'axios';
 import { table } from 'console';
 import styled from './styled.module.scss';
@@ -61,14 +61,6 @@ const PageCompanies: React.FC<Props> = (props) => {
                         cep={registeredCompanies.cep}
                         opendate={registeredCompanies.opendate}
                     >
-                        
-                        {/* <button
-                            type="submit"
-                            className={styled.DeleteBtn}
-                            // onClick={() => setId(registeredCompanies.id)}
-                        >
-                            Editar
-                        </button> */}
                         <button
                             type="submit"
                             className={styled.DeleteBtn}
@@ -98,4 +90,4 @@ const PageCompanies: React.FC<Props> = (props) => {
     )
 }
 
-export default PageCompanies;
+export default memo(PageCompanies);
