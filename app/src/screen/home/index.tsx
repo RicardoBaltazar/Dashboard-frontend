@@ -7,7 +7,7 @@ const pageHome = () => {
     return (
         <>
         <div className={styled.cards}>
-            <Cards title='Listar Empresas' icon={<MdWork />} link='/companies'/>
+            <Cards title='Listar Empresas' icon={<MdWork />} link='/companies/1'/>
             <Cards title='Cadastrar Empresas' icon={<MdAddCircleOutline />} link='/register' />
         </div>
         </>

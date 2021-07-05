@@ -10,8 +10,6 @@ const PageRegister: React.FC = () => {
     const [name, setName] = useState<String>('');
     const [cnpj, setCnpj] = useState<String>('');
     const [city, setCity] = useState<String>('');
-    // const [cep, setCep] = useState<String>('');
-    // const [openDate, setOpenDate] = useState<String>('');
     const [ loading, setLoading ] = useState<Boolean>(false);
     const { notification, setNotification }  = useNotification();
     
@@ -33,8 +31,6 @@ const PageRegister: React.FC = () => {
             name: name,
             cnpj: cnpj,
             uf: city,
-            // cep: cep,
-            // opendate: openDate,
         }, {headers: headers})
         .then(function (response) {
             console.log(response);
@@ -70,14 +66,6 @@ const PageRegister: React.FC = () => {
                             <label htmlFor="">Cidade/UF</label>
                             <input type="text" onChange={e => setCity(e.target.value)} />
                         </div>
-                        {/* <div>
-                            <label htmlFor="">CEP</label>
-                            <input type="text" onChange={e => setCep(e.target.value)} />
-                        </div>
-                        <div>
-                            <label htmlFor="">Data de Abertura</label>
-                            <input type="text" onChange={e => setOpenDate(e.target.value)} />
-                        </div> */}
                     </div>
                 <button type='submit' onClick={handleLoading}>
                             {loading && <span><VscLoading /></span>}

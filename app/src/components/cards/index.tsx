@@ -1,14 +1,11 @@
 import styled from './styled.module.scss';
 import { Link } from "react-router-dom";
 
-
 interface Props {
     title: String
     icon: Object
     link: string
 }
-
-
 
 const Cards: React.FC<Props> = (props) => {
     return (

@@ -1,64 +1,10 @@
 {
   "companies": [
     {
-      "name": "Empresa",
-      "cnpj": "123456789",
-      "uf": "Viamão",
-      "cep": "987654321",
-      "opendate": "12/12/2015",
-      "id": 9
-    },
-    {
-      "name": "Teste",
-      "cnpj": "2235124",
-      "uf": "Viamão",
-      "cep": "523561254",
-      "opendate": "23562421",
-      "id": 10
-    },
-    {
-      "name": "Empresa",
-      "cnpj": "5216555521542",
-      "uf": "Porto Alegre",
-      "cep": "9420154421",
-      "opendate": "25315421",
-      "id": 11
-    },
-    {
-      "name": "Empresa",
-      "cnpj": "52195023150444",
-      "uf": "Porto Alegre",
-      "id": 12
-    },
-    {
-      "name": "asd",
-      "cnpj": "asd",
-      "uf": "asd",
-      "id": 13
-    },
-    {
-      "name": "asd",
-      "cnpj": "asd",
-      "uf": "asd",
-      "id": 14
-    },
-    {
-      "name": "teste",
-      "cnpj": "22351.62492102",
-      "uf": "5215462",
-      "id": 16
-    },
-    {
-      "name": "teste",
-      "cnpj": "22351.62492102",
-      "uf": "5215462",
-      "id": 17
-    },
-    {
-      "name": "Empresa",
-      "cnpj": "96532512452152",
-      "uf": "Viamão",
-      "id": 18
+      "name": "Empresa 1",
+      "cnpj": "96532514525878",
+      "uf": "Porto Alegre - RS",
+      "id": 1
     }
   ]
 }

@@ -1,7 +1,6 @@
 import Styled from './styled.module.scss';
 import { VscAdd } from "react-icons/vsc";
 
-
 const AddButton: React.FC = () => {
     return (
         <>

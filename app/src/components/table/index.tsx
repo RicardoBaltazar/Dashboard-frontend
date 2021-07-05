@@ -11,8 +11,6 @@ interface Props {
 }
 
 const Table: React.FC<Props> = (props) => {
-
-
     return (
         <>
             <tr className={styled.tr}>

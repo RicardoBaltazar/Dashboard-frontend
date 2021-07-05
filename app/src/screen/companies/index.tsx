@@ -4,20 +4,24 @@ import { table } from 'console';
 import styled from './styled.module.scss';
 import Table from '../../components/table';
 import AddButton from '../../components/addButton';
-const url = 'http://localhost:8000/companies/?_page=2&_limit=5';
+import Pagination from '../../components/pagination';
+import { useParams } from "react-router-dom";
 
 interface Props {
-    id: String
+    id: string;
     name: string;
-    cnpj: String
-    uf: String
-    cep: String
-    opendate: String
+    cnpj: string;
+    uf: string;
+    cep: string;
+    opendate: string;
+    pagination: string;
 }
 
 const PageCompanies: React.FC<Props> = (props) => {
     const [registeredCompanies, setRegisteredCompanies] = useState([props]);
     const [id, setId] = useState<String>();
+    let { pagination }  = useParams<Props>();
+    const url = `http://localhost:8000/companies/?_page=${pagination}&_limit=4`;
 
     useEffect(() => {
         axios.get(url)
@@ -83,9 +87,19 @@ const PageCompanies: React.FC<Props> = (props) => {
                     </div>
 
                     {tableCompanies}
+
                 </div>
             </div>
+
             <AddButton />
+
+            <div className={styled.pagination}>
+                <Pagination link='/companies/1' number='1'/>
+                <Pagination link='/companies/2' number='2'/>
+                <Pagination link='/companies/3' number='3'/>
+                <Pagination link='/companies/4' number='4'/>
+                <Pagination link='/companies/5' number='5'/>
+            </div>
         </>
     )
 }

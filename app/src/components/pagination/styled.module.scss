@@ -1,0 +1,14 @@
+.pagination {
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+    color: #000000;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover{
+        background-color: #1B1D29;
+        color: #ffffff;
+    }
+}
