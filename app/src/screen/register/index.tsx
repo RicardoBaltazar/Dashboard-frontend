@@ -5,6 +5,11 @@ import { VscLoading } from "react-icons/vsc";
 import { useNotification } from '../../context/notification';
 const url = 'http://localhost:8000/companies';
 
+const cities = [
+    "Porto Alegre - RS",
+    "Santa Catarina - SC"
+]
+
 const PageRegister: React.FC = () => {
 
     const [name, setName] = useState<String>('');

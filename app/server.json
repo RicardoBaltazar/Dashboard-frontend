@@ -5,6 +5,12 @@
       "cnpj": "96532514525878",
       "uf": "Porto Alegre - RS",
       "id": 1
+    },
+    {
+      "name": "Florianópolis",
+      "cnpj": "23564215121212",
+      "uf": "Santa Catarina - SC",
+      "id": 2
     }
   ]
 }
