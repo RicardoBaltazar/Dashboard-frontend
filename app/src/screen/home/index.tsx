@@ -7,8 +7,14 @@ const pageHome = () => {
     return (
         <>
         <div className={styled.cards}>
-            <Cards title='Listar Empresas' icon={<MdWork />} link='/companies/1'/>
-            <Cards title='Cadastrar Empresas' icon={<MdAddCircleOutline />} link='/register' />
+            <Cards 
+                title='Listar Empresas' 
+                value='1'
+            />
+            <Cards 
+                title='Listar Empresas' 
+                value='1'
+            />
         </div>
         </>
     )

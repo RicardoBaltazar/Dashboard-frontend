@@ -4,9 +4,11 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import pageHome from '../screen/home';
-import PageCompanies from '../screen/companies';
-import pageRegister from '../screen/register';
+import Dashboard from "../pages/dashboard";
+import AddEmployees from "../pages/addEmployees";
+import ListEmployees from "../pages/listEmployees";
+import AddCompanies from "../pages/addCompanies";
+import ListCompanies from "../pages/listCompanies";
 import Register from '../pages/register';
 
 export default function Routes(){
@@ -14,10 +16,12 @@ export default function Routes(){
         <>
             <Router>
                     <Switch>
-                        <Route exact path="/" component={pageHome} />
-                        <Route path="/companies/:pagination" component={PageCompanies} />
-                        {/* <Route path="/register" component={pageRegister} /> */}
+                        <Route exact path="/" component={Dashboard} />
                         <Route path="/register" component={Register} />
+                        <Route path="/add-employees" component={AddEmployees} />
+                        <Route path="/add-companies" component={AddCompanies} />
+                        <Route path="/list-employees" component={ListEmployees} />
+                        <Route path="/list-companies" component={ListCompanies} />
                     </Switch>
             </Router>
         </>

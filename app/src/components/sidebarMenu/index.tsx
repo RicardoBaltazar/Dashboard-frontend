@@ -1,21 +1,9 @@
 import React from 'react';
-// import styled from './styled.module.scss';
-// import { MdAccountBalance, MdAddCircleOutline, MdWork } from "react-icons/md";
-import { useNotification } from '../../context/notification';
 
 export default function Menu() {
-    const { notification } = useNotification();
-    const [openMenu, setOpenMenu] = React.useState<boolean>(true);
 
-    const menu = () => {
-        if (openMenu) {
-            alert('Fechando Menu')
-            setOpenMenu(false);
-        } else {
-            setOpenMenu(true)
-            alert('Abrindo Menu')
-        }
-    }
+
+
 
     return (
         <>
@@ -24,19 +12,19 @@ export default function Menu() {
 
                 <nav className='mt-4'>
                     <ul className='text-left font-bold px-4'>
-                        <a href="">
+                        <a href="/">
                             <li className='mb-2 py-2 px-4 hover:bg-blue-900 rounded-lg'>Dashboard</li>
                         </a>
-                        <a href="">
+                        <a href="/add-companies">
                             <li className='mb-2 py-2 px-4 hover:bg-blue-900 rounded-lg'>Cadastrar Empresa</li>
                         </a>
-                        <a href="">
+                        <a href="/add-employees">
                             <li className='mb-2 py-2 px-4 hover:bg-blue-900 rounded-lg'>Cadastrar Funcionário</li>
                         </a>
-                        <a href="">
+                        <a href="/list-companies">
                             <li className='mb-2 py-2 px-4 hover:bg-blue-900 rounded-lg'>Empresas Cadastradas</li>
                         </a>
-                        <a href="">
+                        <a href="/list-employees">
                             <li className='mb-2 py-2 px-4 hover:bg-blue-900 rounded-lg'>Funcionários Cadastrados</li>
                         </a>
                     </ul>
