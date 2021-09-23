@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
+import './index.css';
 import { NotificationProvider } from './context/notification';
 import App from './App';
 
